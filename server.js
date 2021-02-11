@@ -22,6 +22,15 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useCreateIndex: true,
 });
 
+const connection = mongoose.connection;
+
+connection.on("connected", () => {
+  console.log("Successfully connected");
+});
+connection.on("error", () => {
+  console.log("Connection error" + err);
+});
+
 // routes
 app.use(require("./routes/api.js"));
 
