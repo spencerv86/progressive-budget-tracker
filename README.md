@@ -1,65 +1,69 @@
-# progressive-budget-tracker
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Progressive Budget Tracker
 
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
+## Description
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
-
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
-
-Offline Functionality:
-
-  * Enter deposits offline
-
-  * Enter expenses offline
-
-When brought back online:
-
-  * Offline entries should be added to tracker.
-
-## User Story
-AS AN avid traveller
-I WANT to be able to track my withdrawals and deposits with or without a data/internet connection
-SO THAT my account balance is accurate when I am traveling
-
-## Business Context
-
-Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
+This Progressive Budget Tracker is a progressive web application that allows a user to keep track of all of their spending via their own input. This app was written using Express.js, Mongoose.js and MongoDB.
 
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
 
-- - -
+---------------------------
 
-## Commit Early and Often
+The deployed and functional site on Heroku can be found here: <https://pro-budget-app.herokuapp.com/>
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+The full process can be found on [my Github](https://github.com/spencerv86/) repository linked here:
+<https://github.com/spencerv86/progressive-budget-tracker>
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
+---------------------------
 
-* Follow these guidelines for committing:
+## Table of Contents
 
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
 
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
+## Installation
 
-  * Test your application before you commit to ensure functionality at every step in the development process
+If you would like to inspect the code, please begin by forking the repository and downloading to your computer. Make sure that you have node already installed. 
+You will likely need to run 
+```npm install``` but no other files should be necessary.
 
-* We would like you to have well over 200 commits by graduation, so commit early and often!
+If you would simply like to see the app in action, no installation is needed, just click the following link: <https://pro-budget-app.herokuapp.com/>
 
-* Deploy your application with [Heroku and MongoDB Atlas.](../04-Important/MongoAtlas-Deploy.md)
+## Usage
 
-## Submission on BCS
+To use this site, simply add and subtract your gains and expenses in the forms at the top. After each addition/subtraction, the graph below will dynamically update to show the changes in the user's cashflow over time. As a progressive web app, it is also functional if the user happens to go offline and any changes will update the database when the user returns to network.
 
-* You are required to submit the following:
+![Budget Tracker Screenshot](./public/images/pro-budget-tracker-screenshot.png)
 
-  * the URL to the deployed application
 
-  * the URL to the Github repository
+## Credits
 
+Thanks to the ever helpful instructional staff and members of my cohort!
+
+## License
+
+MIT License
+
+Copyright (c) 2021 Spencer Vaughan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
